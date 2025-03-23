@@ -1,5 +1,5 @@
 function countdown() {
-    const eventDate = new Date("2025-06-01T00:00:00").getTime();
+    const eventDate = new Date("2025-04-10T00:00:00").getTime();
     setInterval(() => {
         const now = new Date().getTime();
         const diff = eventDate - now;
