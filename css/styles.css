@@ -792,3 +792,104 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
+
+/* ------------------------------------- */
+/* Media Query para Móviles (max-width: 768px) */
+/* ------------------------------------- */
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    /* Menú de navegación */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        display: none; /* Oculta los enlaces por defecto */
+    }
+
+    .nav-links.active {
+        display: flex; /* Muestra los enlaces cuando el menú está activo */
+    }
+
+    .btn-inscribirse {
+        margin-top: 10px;
+    }
+
+    /* Cuenta regresiva */
+    .countdown-section {
+        padding: 80px 20px 20px;
+    }
+
+    #countdown {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .time-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Sección "El Reto" */
+    #reto {
+        padding: 30px 10%;
+    }
+
+    .reto-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reto-card {
+        width: 100%;
+    }
+
+    /* Preguntas frecuentes */
+    .faq-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Galería de imágenes */
+    .galeria-container {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-item {
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    /* Botón de menú móvil (opcional) */
+    .menu-toggle {
+        display: block;
+        background: var(--color-secondary);
+        color: var(--color-primary);
+        padding: 10px;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
